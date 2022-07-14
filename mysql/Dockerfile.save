@@ -1,3 +1,0 @@
-FROM mysql:5.7
-
-COPY ./home/nico/Documents/desafio-devops/mysql/init.sql:
