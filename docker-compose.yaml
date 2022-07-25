@@ -28,7 +28,13 @@ services:
             - MYSQL_DATABASE=node_db
             - MYSQL_ROOT_PASSWORD=root
         networks:
-            - node-network
+          - node-network
+        volumes:
+            - /var/lib/mysql
+        ports:
+          - "3306:3306"
+
+
 
     nginx:
         build:
@@ -41,3 +47,7 @@ services:
             - node-network
         ports: 
             - "8080:80"
+
+networks:
+    node-network:
+        external: true

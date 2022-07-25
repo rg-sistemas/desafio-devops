@@ -1,18 +1,29 @@
-# Desafio Devops
+#Desafio DevOps
 
-O projeto contém uma aplicação básica com Node, Ngnix e MySQL. 
+Codigo esta rodando conforme solicitado.
 
-A cada atualização da página, um novo registro será cadastrado no banco de dados e será mostrado na listagem, na mesma página.  
+Feito correções de bugs e colocado em uma Branch separada para seguir as boas praticas de programação.
+Faltavas algumas virgulas e pontos e virgulas em alguns programas e principalmente faltava Setar as portas propriamente para que aconteça a conexão conforme o objetivo do codigo.
 
-O projeto contém algumas falhas e erros, analise e implemente as devidas correções.
 
-Se não entender algum conceito ou parte do problema, não é motivo para se preocupar! Queremos que faça o desafio até onde souber.
 
-### O que deve ser feito? ### 
+Log final:
 
- - ajustes que fazem todas as aplicações subirem e se comunicarem
- - um README contendo os seus pensamentos ao longo do projeto para identificação e correção dos erros
 
-Faça um fork e realize commits ao longo do processo para que possamos entender o seu modo de pensar! :)
- 
-  
+
+Desafio Devops!
+Maria Cecília Franco Neto
+Maria Alice Melo
+Nicolas Melo
+
+
+nico@nico-Nitro-AN515-55:~/Documents/desafio-devops$ sudo docker compose up
+[sudo] password for nico: 
+[+] Running 3/0
+ ⠿ Container db     Running                                                0.0s
+ ⠿ Container app    Running                                                0.0s
+ ⠿ Container nginx  Running                                                0.0s
+Attaching to app, db, nginx
+db     | 2022-07-15T17:23:39.497003Z 8 [Note] Got packets out of order
+db     | 2022-07-15T17:23:39.618886Z 9 [Note] Got packets out of order
+db     | 2022-07-15T17:23:47.105986Z 10 [Note] Got an error reading communication packets
