@@ -4,6 +4,8 @@ WORKDIR /usr/src/app
 
 COPY . .
 
+CMD ["npm","run","start"]
+
 RUN npm install 
 RUN npm install --save express
 
@@ -18,6 +20,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
 
-CMD ["npm","run","start"]
+
 
 EXPOSE 3000
